@@ -1,7 +1,12 @@
 <div>
-  <h3>Calculator Component</h3>
-    {{$ctrl.myFavNum}}
-    <h4>Child Components Show up below here</h4>
-    <addition-component bwa="$ctrl.myFavNum" formula="$ctrl.addX"></addition-component>
+  <h3>Input your number to perform calculations upon ...</h3>
+      <input type="number" ng-model="$ctrl.myFavNum">
+ <strong> Answer so far: {{$ctrl.myFavNum}}</strong>
+  <h4>Available calculations:</h4>
+  <addition-component bwa="$ctrl.myFavNum" formula="$ctrl.addX"></addition-component>
+  <subtraction-component bwa="$ctrl.myFavNum" formula="$ctrl.subtractX"></subtraction-component>
+  <multiply-component bwa="$ctrl.myFavNum" formula="$ctrl.multiplyX"></multiply-component>
+  <divide-component bwa="$ctrl.myFavNum" formula="$ctrl.divideX"></divide-component>
+
 
 </div>
