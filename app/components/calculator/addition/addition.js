@@ -6,12 +6,13 @@
       controller: AdditionController,
       bindings: {
         bwa: '<',
-        formula: '<'
+        formula: '<',
+        // onDelete: "&"
       }
     })
 
   function AdditionController() {
-    // this.testing = 123;
+var ac = this;
 
   }
 

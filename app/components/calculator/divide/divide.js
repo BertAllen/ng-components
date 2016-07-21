@@ -11,8 +11,7 @@
         })
 
     function DivideController() {
-        // this.testing = 123;
-
+var dc = this;
     }
 
 } ())

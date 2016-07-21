@@ -11,8 +11,7 @@
         })
 
     function SubtractionController() {
-        // this.testing = 123;
-
+var sc=this;
     }
 
 } ())

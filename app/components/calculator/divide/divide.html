@@ -1,5 +1,5 @@
 <div>
     <!--<h1>I test for division</h1>-->
     <input type="number" ng-model="$ctrl.num">
-    <button ng-click="$ctrl.formula($ctrl.num)">Divide</button>
+    <button ng-click="$ctrl.formula($ctrl.num); $ctrl.num=undefined">Divide</button>
 </div>

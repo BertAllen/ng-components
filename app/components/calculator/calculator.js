@@ -8,19 +8,20 @@
 
   function CalculatorController() {
     var cc = this
-    this.myFavNum = 43 - 1;
+    this.myFavNum = undefined;
 
     this.addX = function (x) {
       // debugger
-      if(x==undefined){
+      if(x==undefined || cc.myFavNum == undefined){
         alert("Please input a number before attempting this operation.");
         return;
       }
       cc.myFavNum += x;
+      // ac.num=undefined;
     }
 
     this.subtractX = function (x) {
-       if(x==undefined){
+       if(x==undefined || cc.myFavNum == undefined){
         alert("Please input a number before attempting this operation.");
         return;
       }
@@ -28,7 +29,7 @@
     }
 
     this.multiplyX = function (x) { 
-      if(x==undefined){
+      if(x==undefined || cc.myFavNum == undefined){
         alert("Please input a number before attempting this operation.");
         return;
       }
@@ -36,7 +37,7 @@
     }
 
     this.divideX = function (x) {
-       if(x==undefined){
+       if(x==undefined || cc.myFavNum == undefined){
         alert("Please input a number before attempting this operation.");
         return;
       }

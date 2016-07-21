@@ -6,13 +6,13 @@
             controller: MultiplyController,
             bindings: {
                 bwa: '<',
-                formula: '<'
+                formula: '<',
+                // onDelete: "&"
             }
         })
 
     function MultiplyController() {
-        // this.testing = 123;
-
+var mc=this;
     }
 
 } ())

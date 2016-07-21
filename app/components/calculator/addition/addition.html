@@ -1,5 +1,5 @@
 <div>
   <!--<h1>Hello I am a test for addition</h1>-->
   <input type="number" ng-model="$ctrl.num">
-  <button ng-click="$ctrl.formula($ctrl.num)">Add</button>
+  <button ng-click="$ctrl.formula($ctrl.num); $ctrl.num=undefined">Add</button>
 </div>
